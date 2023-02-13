@@ -1,0 +1,23 @@
+void main() {
+  
+  int a = 7;
+  int b = 5;
+  int c = 7;
+
+  if (a >= b + c) {
+    print("NÃO FORMA TRIANGULO");
+  } else {
+    if (a * a == b * b + c * c) {
+      print("TRIÂNGULO RETÂNGULO");
+    } else if (a * a > b * b + c * c) {
+      print("TRIÂNGULO OBTUSÂNGULO");
+    } else if (a * a < b * b + c * c) {
+      print("TRIÂNGULO ACUTÂNGULO");
+    }
+    if (a == b && b == c) {
+      print("TRIÂNGULO EQUILÁTERO");
+    } else if (a == b || b == c || a == c) {
+      print("TRIÂNGULO ISÓSCELES");
+    }
+  }
+}
