@@ -1,0 +1,26 @@
+void main() {
+  var nota1 = 2.0, nota2 = 4.0, nota3 = 7.5, nota4 = 8.0;
+  var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+  print("Média: $media");
+
+  if (media >= 7.0) {
+    print("Aluno aprovado");
+  } else if (media >= 5.0 && media < 7.0) {
+    var notaExame = 6.4;
+    print("Aluno em exame");
+    print("Nota do exame: $notaExame");
+
+    media = (media + notaExame) / 2;
+
+    if (media >= 5.0) {
+      print("Aluno aprovado");
+    } else {
+      print("Aluno reprovado");
+    }
+
+    print("Média final: $media");
+  } else {
+    print("Aluno reprovado");
+  }
+}
