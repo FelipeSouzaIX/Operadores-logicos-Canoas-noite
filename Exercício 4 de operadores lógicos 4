@@ -1,12 +1,21 @@
 void main() {
-  var escolhaJogador1 = "par";
-  var numeroJogador1 = 3;
-  var numeroJogador2 = 2;
-  var soma = numeroJogador1 + numeroJogador2;
+  var jogador1 = "par";
+  int escolhaJogador1 = 3;
+  var jogador2 = "impar";
+  int escolhaJogador2 = 2;
 
-  if (soma % 2 == 0 && escolhaJogador1 == "par") {
+  int soma = escolhaJogador1 + escolhaJogador2;
+  var resultado;
+
+  if (soma % 2 == 0) {
+    resultado = "par";
+  } else {
+    resultado = "impar";
+  }
+
+  if (jogador1 == "par" && resultado == "par") {
     print("Jogador 1 ganhou!");
-  } else if (soma % 2 != 0 && escolhaJogador1 == "impar") {
+  } else if (jogador1 == "impar" && resultado == "impar") {
     print("Jogador 1 ganhou!");
   } else {
     print("Jogador 2 ganhou!");
